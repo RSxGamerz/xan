@@ -14,9 +14,9 @@ if(isset($cc) && !empty($cc)) {
 
 
     if (strpos($response, 'Live') !== false) {
-        echo "APPROVED - $cc - t.me/xancheck";
+        echo "APPROVED - $cc - t.me/RX_OuO";
     } elseif (strpos($response, 'error') !== false) {
-        echo "DECLINED - $cc - t.me/xancheck";
+        echo "DECLINED - $cc - t.me/RX_OuO";
     } else {
         echo "Status not recognized in the response.";
     }
