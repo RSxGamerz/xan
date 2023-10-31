@@ -9,7 +9,7 @@ use Stripe\PaymentMethod;
 use Stripe\StripeObject;
 
 // sk key 
-Stripe::setApiKey('your_stripe_secret_key_here');
+Stripe::setApiKey('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');
 
 $creditCardInfo = isset($_GET['cc']) ? $_GET['cc'] : null;
 
@@ -39,10 +39,10 @@ if ($creditCardInfo) {
             'source' => $paymentMethod->id,
         ]);
 
-        echo "APPROVED | $creditCardNumber|$expMonth|$expYear|$cvv | API BY @xancheck";
+        echo "APPROVED | $creditCardNumber|$expMonth|$expYear|$cvv | API BY @RX_OuO";
     } else {
-        echo "DECLINED | $creditCardNumber|$expMonth|$expYear|$cvv | Invalid credit card information APIBY @xancheck";
+        echo "DECLINED | $creditCardNumber|$expMonth|$expYear|$cvv | Invalid credit card information APIBY @RX_OuO";
     }
 } else {
-    echo "Please provide credit card information using the format ?cc={creditcardnumber}|{expmonth}|{expyear}|{cvv} APIBY @xancheck";
+    echo "Please provide credit card information using the format ?cc={creditcardnumber}|{expmonth}|{expyear}|{cvv} APIBY @RX_OuO";
 }
